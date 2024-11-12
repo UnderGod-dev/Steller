@@ -325,7 +325,7 @@ export default function Home() {
                   <h2 className="text-xl">Strategies in Components Designs</h2>
                   <p className="text-white/90 text-lg">
                     Explore the art of building scalable, cohesive design
-                    systems that streamline UI development and enhance team
+                    systems that streamline UI development and enhance templates
                     collaboration.
                   </p>
                   <div className="">
