@@ -2,20 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  scrollbar-width: 1px;
+  scrollbar-color: red;
 }
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-violet-400: theme("colors.white/70%");
+    --color-fuchsia-400: theme("colors.black");
+    --color-fuchsia-900: theme("colors.fuchsia.900");
+    --color-amber-300: theme("colors.amber.300");
+    --color-teal-300: theme("colors.teal.300");
+    --color-gray-950: theme("colors.gray.950");
+    --color-border: theme("colors.gray.200/20%");
+    --color-indigo-900: theme("colors.indigo.900");
+  }
+  .border-gradient {
+    @apply border-2 border-transparent relative [background:linear-gradient(var(--color-gray-950),var(--color-gray-950))_padding-box,conic-gradient(from_45deg,var(--color-violet-400),var(--color-fuchsia-400),var(--color-teal-300),var(--color-amber-300),var(--color-violet-400))_border-box];
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.hexagon-clip {
+  clip-path: polygon(
+    25% 6.7%,
+    75% 6.7%,
+    100% 50%,
+    75% 93.3%,
+    25% 93.3%,
+    0% 50%
+  );
+}
+.star-clip {
+  @apply size-40 bg-gradient-to-tr from-blue-500/10 via-transparent to-white/10;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
 }
