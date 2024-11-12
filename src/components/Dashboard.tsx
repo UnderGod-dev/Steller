@@ -145,7 +145,7 @@ const Dashboard = ({ size = "" }: SizeProps) => {
             </div>
             <div className="col-span-9 md:col-span-8 p-4 space-y-4">
               <div className="flex justify-between border-b border-white/10 pb-6">
-                <div className="md:w-72 rounded-full border border-white/10 flex justify-between items-center px-2">
+                <div className="w-52 md:w-72 rounded-full border border-white/10 flex justify-between items-center px-2">
                   <input
                     type="text"
                     name=""
@@ -184,7 +184,7 @@ const Dashboard = ({ size = "" }: SizeProps) => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3  gap-4 overflow-y-scroll h-[45vh] md:h-[70vh]">
+              <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3  gap-4 overflow-y-scroll h-[65vh] md:h-[70vh]">
                 <div className="hidden 2xl:block">
                   <div className="grid gap-4">
                     <div className=" border border-white/10 rounded-xl p-2 py-4">
